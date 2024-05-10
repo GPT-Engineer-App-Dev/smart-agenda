@@ -38,7 +38,7 @@ const Index = () => {
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={(e) => e.key === 'Enter' && handleAddTask()}
         />
-        <Button onClick={handleAddTask} colorScheme="blue">Add Task</Button>
+        <Button onClick={handleAddTask} colorScheme="green">Add Task</Button>
         <List spacing={3} w="100%">
           {tasks.map(task => (
             <ListItem key={task.id} d="flex" justifyContent="space-between" alignItems="center" p={2} bg={task.isCompleted ? 'green.100' : 'gray.100'}>
